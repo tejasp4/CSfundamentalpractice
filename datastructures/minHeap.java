@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.PriorityQueue;
 public class minHeap {
   private int size = 0;
   private int capacity = 10;
@@ -76,7 +77,7 @@ public class minHeap {
       }
       if (items[index] < items[smallerChildIndex]) {
         break;
-      } 
+      }
       else {
         swap(index, smallerChildIndex);
         index = smallerChildIndex;
@@ -84,6 +85,13 @@ public class minHeap {
     }
   }
   public static void main(String[] args) {
-    System.out.println("this works");
+    PriorityQueue<Integer> testingPQ = new PriorityQueue<>();
+    testingPQ.add(1);
+    testingPQ.add(3);
+    testingPQ.add(5);
+    testingPQ.peek();
+    Object[] arr = testingPQ.toArray();
+    for(Object i : arr) {System.out.println(i);}
+    System.out.println(testingPQ.peek());
   }
 }
