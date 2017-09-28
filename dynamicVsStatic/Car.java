@@ -11,4 +11,7 @@ public class Car extends Vehicle{
   public static void nameOfVehicle() {
     System.out.println("This is a car");
   }
+  public void increaseHorsepower() {
+    System.out.println("vroom!");
+  }
 }
