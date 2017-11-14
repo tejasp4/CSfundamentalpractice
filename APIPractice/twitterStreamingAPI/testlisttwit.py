@@ -29,7 +29,7 @@ def funcApplyTweet(twitterTweetsList, func):
         func(tweet)
 
 
-keywordList = ['concert']
+keywordList = ['#berkeley']
 
 rv = tweetStreamKeywords(keywordList)
 printOutTweets(rv)
