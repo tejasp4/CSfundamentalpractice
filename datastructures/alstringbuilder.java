@@ -30,6 +30,44 @@ public class alstringbuilder {
 		}
 		return true;
 	}
+
+	/** Write a method to replace all spaces in a string with '%20' */ 
+	public static String URLify(String input) {
+		char[] ca = input.toCharArray();
+		for (int i = 0; i < ca.length; i++) {
+			if (ca[i] != " ") {
+				continue;
+			} else {
+				//work on later
+			}
+		}
+
+	}
+
+	/** Check palindrome */
+	public static boolean palindrome(String word) {
+		boolean odd;
+		if (word.length % 2 == 0) {
+			odd = false;
+		} else {
+			odd = true;
+		}
+		for ()
+	}
+
+	/** One away: Check if string has a character added, inserted, or removed*/ 
+	public static boolean oneAway(String before, String after) {
+		if (before.length != after.length) {
+			if (before.length + 1 == after.length ||
+				before.length - 1 == after.legnth) {
+				
+			} else {
+				return false;
+			}
+		} else {
+
+		}
+	}
 	public static void main(String[] args) {
 		
 	}
