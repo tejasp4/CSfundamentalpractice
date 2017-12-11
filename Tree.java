@@ -27,17 +27,20 @@ public class Tree<T> {
 			this.degree = right.degree + left.degree + 1;
 		}
 	}
+	public value() {
+		return this.value;
+	}
 	/**Gives right child of Tree t.*/
-	public Tree right(Tree t) {
-		return t.right;
+	public Tree right() {
+		return this.right;
 	}
 	/**Gives left child of Tree t.*/ 
-	public Tree left(Tree t) {
-		return t.left;
+	public Tree left() {
+		return this.left;
 	}
 	/** Gives parent of Tree t. */ 
-	public Tree parent(Tree t) {
-		return t.parent;
+	public Tree parent() {
+		return this.parent;
 	}
 
 	public void setLeftChild(Tree t, Tree left) {
