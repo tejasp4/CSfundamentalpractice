@@ -1,0 +1,29 @@
+1) Is f(n) = 20501 in O(1) ?
+	Yes, it is 0(1) as regardless as n grows, the result is always 20501.
+2) Is f(n) = n^2 + n in Ω(0.000001n^3) ?
+	No. Ω Is the lower bound of g(n) so that means only those where n^k is slower than that of n^3  (aka k>3)
+3) Is f(n) = 2^(2n)+1000 in O(4^n + n^100) ?
+	Can think of this as (4^n + 100) in 0(4^n), which is true. So yes.
+4) Is f(n) = log (n ^ 100) = 100 log n in Θ(n log n) ?
+5) Is f(n) = n log n + 3^n + n in Ω(n^2 + n + log n) ?
+	This can be considered as is n^3 in Ω(n^2) which is true. So yes
+6) Is f(n) = n log n + n^2 in Θ(log n + n^2) ?
+	Yes. We can simplify this to f(n) = theta(n^2) and this is equal to theta(n^2)
+
+
+
+Code Problem:
+int j = 0;
+for (int i = N; i > 0; i--) { // Call this loop 1
+  for (; j <= M; j++) {       // Call this loop 2
+    if (ping(i, j) > 64) {
+      break;
+    }
+  }
+}
+
+What is the worst case, best case, and average case?
+
+1)
+2)
+3)
