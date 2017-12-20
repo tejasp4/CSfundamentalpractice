@@ -17,10 +17,11 @@ class IsUnique {
 
 	}
 	public static void main(String[] args) {
-		String testString = "abcdefg";
-		String testString2 = "aaaaa";
-		System.out.println(checkIsUnique(testString));
-		System.out.println(checkIsUnique(testString2));
+		String[] testStrings = new String[]{"aaaaa", "abcdefg", "ababab", "lol", "haha", "yay!", ":D"};
+		for (String word : testStrings) {
+			System.out.println(checkIsUnique(word));
+		}
+		
 	}
 	
 }
