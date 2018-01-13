@@ -39,7 +39,31 @@ class Node:
 			curr = curr.next
 		return head
 
-def test():
+	def find_kth_last(self, k):
+		# first get length of the linkedlist
+		length = 0
+		len_head = self
+		while len_head != None:
+			length += 1
+			len_head = len_head.next
+		# then find kth last element
+		i = 1
+		head = self
+		while i < (length - k + 1):
+			head = head.next
+			i += 1
+		return head.data
+
+	def sum_lists(node_one, node_two, carry=0):
+		head_one = node_one
+		while head_one != None:
+			if head_one.data + head_two.data >= 10:
+				return Node((head_one.data + head_two.data) % 10 + carry) + sum_lists(head_one.next, head_two.next, head_one.data + head_two.data // 10)
+
+
+
+
+def test_remove_dups():
 	n = Node(1)
 	n.append(10)
 	n.append(5)
@@ -48,3 +72,14 @@ def test():
 	n.print()
 	n.remove_duplicates()
 	n.print()
+
+def test_find_kth_last():
+	n = Node(1)
+	n.append(10)
+	n.append(5)
+	n.append(10)
+	n.append(5)
+	n.print()
+	print(n.find_kth_last(2))
+
+
